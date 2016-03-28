@@ -23,12 +23,13 @@ description: Computational Mathematician
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Research: "aboutme"
+  Publications:
+    - List: "publications"
+    - Google Scholar Profile: "https://scholar.google.ca/citations?user=OCFgRysAAAAJ&hl=en"
+    - ResearchGate: "https://www.researchgate.net/profile/Dominique_Orban
+  Teaching: "teaching"
+  GERAD: "https://gerad.ca/en/people/dominique-orban"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -41,10 +42,10 @@ navbar-links:
 author:
   name: Dominique Orban
   email: "dominique.orban@gmail.com"
-  github: dpo    # eg. daattali
-  linkedin: in/dominique-orban-9497ab6  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: 505285/dominique  # eg. "3943160/daattali"
- 
+  github: dpo
+  linkedin: in/dominique-orban-9497ab6
+  stackoverflow: 505285/dominique
+
 # Select which links to show in the footer
 footer-links-active:
   rss: true
