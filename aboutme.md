@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Dominique Orban
-subtitle: Computational Mathematician
+title: Research
 ---
 
 My scientific interests span computational optimization, numerical analysis, numerical linear algebra, scientific computing, and modeling environments.
