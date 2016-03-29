@@ -1,5 +1,4 @@
 ---
 layout: page
-title: Dominique Orban
-subtitle: Teaching
+title: Teaching
 ---
