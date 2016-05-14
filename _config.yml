@@ -24,12 +24,10 @@ description: Computational Mathematician
 # List of links in the navigation bar
 navbar-links:
   Research: "aboutme"
-  Publications:
-    - List: "publications"
-    - Google Scholar Profile: "https://scholar.google.ca/citations?user=OCFgRysAAAAJ&hl=en"
-    - ResearchGate: "https://www.researchgate.net/profile/Dominique_Orban"
+  Publications: "publications"
   Teaching: "teaching"
   Software: "software"
+  Datasets: "datasets"
   GERAD: "https://gerad.ca/en/people/dominique-orban"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -44,6 +42,8 @@ author:
   name: Dominique Orban
   email: "dominique.orban@gmail.com"
   github: dpo
+  googlescholar: OCFgRysAAAAJ
+  researchgate: Dominique_Orban
   linkedin: in/dominique-orban-9497ab6
   stackoverflow: 505285/dominique
 
@@ -54,6 +54,8 @@ footer-links-active:
   email: true
   twitter: false
   github: true
+  googlescholar: true
+  researchgate: true
   linkedin: true
   stackoverflow: true
 
@@ -146,6 +148,38 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
+
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: type
+  # type_order: article, inproceeding, techreport
+  # group_order: ascending
+
+  source: ./_bibliography
+  # bibliography: articles2015.bib
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+  bibtex_filters:
+  # - superscript
+  - latexmarkup  # defined in _plugins/ext.rb
+  # - markdown  # for \href{...} directives in entries, messes up other things
+  - latex
+  - doi  # defined in _plugins/ext.rb
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
