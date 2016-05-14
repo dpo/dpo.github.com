@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      TeX: {
+        TagSide: "right",
+        Macros: {
+          R: '\\mathbb{R}'
+        }
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script>
+
+  <title>Software</title>
+
+  <meta name="author" content="Dominique Orban" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Dominique Orban - Computational Mathematician" href="/feed.xml" />
+
+ <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+
+  
+  
+    
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/primer/3.0.1/primer.css" />
+    
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    
+  
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/academicons.css" />
+    
+  
+
+  
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="Software" />
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://dpo.github.io/software/" />
+  
+
+  
+  <meta property="og:image" content="" />
+  
+
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://dpo.github.io">Dominique Orban</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/aboutme">Research</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/publications">Publications</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/teaching">Teaching</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/software">Software</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/datasets">Datasets</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="https://gerad.ca/en/people/dominique-orban">GERAD</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Software</h1>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h1 id="a-julia-ecosystem-for-optimization">A Julia Ecosystem for Optimization</h1>
+
+<p>A modeling and solution environment for continuous optimization in the high-level and high-performance <a href="http://julialang.org">Julia</a> language.
+Though still young, the environment provides access to the <a href="http://ccpforge.cse.rl.ac.uk/gf/project/cutest/wiki">CUTEst</a> and <a href="http://www.ampl.com">AMPL</a> modeling environments and can be used alongside <a href="https://github.com/JuliaOpt/JuMP.jl">JuMP</a>.</p>
+
+<p>Important features include lazy linear operators, a collection of Krylov methods, a problem collection, and interfaces to high-performance linear algebra kernels.
+Several building blocks for optimization are available and complete solvers are in the making.</p>
+
+<p><a href="https://github.com/JuliaOptimizers">
+  <i class="fa fa-github fa-2x" alt="Github" title="Github" aria-hidden="true" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="a-python-ecosystem-for-optimization">A Python Ecosystem for Optimization</h1>
+
+<p>A complete modeling and solution environment for continuous optimization in the high-level <a href="http://www.python.org">Python</a> language with computationally-intensive parts written in <a href="http://www.cython.org">Cython</a>.
+Distributed across several modular packages, the environment features modeling facilities, including automatic differentiation, limited-memory quasi-Newton approximations, discretized PDE-constrained problems via <a href="http://fenicsproject.org">FEniCS</a>, building blocks for writing optimization solvers, efficient linear algebra functionalities, and several complete solvers.</p>
+
+<p><a href="https://github.com/PythonOptimizers">
+  <i class="fa fa-github fa-2x" alt="Github" title="Github" aria-hidden="true" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="lldl-limited-memory-ldl-factorization">LLDL: Limited-Memory LDL Factorization</h1>
+
+<p>LLDL implements a limited-memory scheme for symmetric matrices that possess a \(LDL^T\) factorization, i.e., with \(D\) diagonal. Symmetric quasi-definite matrices fall into this category.
+LLDL is applicable to symmetric indefinite matrices that are not quasi definite, or more generally do not admit a \(LDL^T\) factorization.
+In this case, it computes an incomplete factorization of a nearby matrix.
+LLDL is chiefly used to produce preconditioners for solving symmetric indefinite systems using an iterative method such as <a href="http://web.stanford.edu/group/SOL/software/minres">MINRES</a>.</p>
+
+<p><a href="https://github.com/optimizers/lldl">
+  <i class="fa fa-github fa-2x" alt="Github" title="Github" aria-hidden="true" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="cuter--cutest">CUTEr / CUTEst</h1>
+
+<p>A versatile testing environment for optimization and linear algebra solvers.
+The package contains a collection of test problems, along with Fortran 77, Fortran 90/95, C/C++ and Matlab tools intended to help developers design, compare and improve new and existing solvers.
+It is usually associated to SIFDecode, a decoder for problems modeled in the <a href="http://www.numerical.rl.ac.uk/lancelot/sif/sifhtml.html">SIF</a>—a generalization of the <a href="https://en.wikipedia.org/wiki/MPS_(format)">MPS</a> modeling language for linear programs.
+CUTEst realizes the interface between such problems and a variety of popular solvers.</p>
+
+<p><a href="http://ccpforge.cse.rl.ac.uk/gf/project/cutest/wiki">
+  <i class="fa fa-home fa-2x" alt="Home" title="Home" aria-hidden="true" style="color:#404040">
+  </i>
+</a>
+<a href="https://en.wikipedia.org/wiki/CUTEr" style="text-decoration:none">
+  <i class="fa fa-wikipedia-w fa-2x" alt="Wikipedia" title="Wikipedia" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="galahad">GALAHAD</h1>
+
+<p>A thread-safe library of Fortran 90 packages for nonlinear optimization problems.
+Areas currently covered by the library include unconstrained and bound-constrained optimization, quadratic programming, nonlinear programming, systems of nonlinear equations and inequalities, and nonlinear least squares problems.
+The library also contains a quadratic program preprocessor and a Lanczos-based method for trust-region subproblems.</p>
+
+<p><a href="http://www.galahad.rl.ac.uk">
+  <i class="fa fa-home fa-2x" alt="Home" title="Home" aria-hidden="true" style="color:#404040">
+  </i>
+</a>
+<a href="https://en.wikipedia.org/wiki/Galahad_library" style="text-decoration:none">
+  <i class="fa fa-wikipedia-w fa-2x" alt="Wikipedia" title="Wikipedia" style="color:#404040">
+  </i>
+</a></p>
+
+      
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/dpo" title="GitHub">
+                <i class="fa fa-github fa-2x"></i>
+            </a>
+          </li>
+          <li></li>
+          
+          
+          <li>
+            <a href="https://scholar.google.ca/citations?user=OCFgRysAAAAJ&hl=en" title="Google Scholar">
+                <i class="ai ai-google-scholar ai-2x"></i>
+            </a>
+          </li>
+          <li></li>
+          
+          
+          <li>
+            <a href="https://www.researchgate.net/profile/Dominique_Orban" title="ResearchGate">
+                <i class="ai ai-researchgate ai-2x"></i>
+            </a>
+          </li>
+          <li></li>
+          
+		  
+		  
+          <li>
+            <a href="mailto:dominique.orban@gmail.com" title="Email me">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+          </li>
+          <li></li>
+          
+		  
+          <li>
+            <a href="https://linkedin.com/in/dominique-orban-9497ab6" title="LinkedIn">
+                <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li></li>
+          
+		  
+          <li>
+            <a href="https://stackoverflow.com/users/505285/dominique" title="StackOverflow">
+                <i class="fa fa-stack-overflow fa-2x"></i>
+            </a>
+          </li>
+          <li></li>
+      
+		  
+    		  <li>
+      			<a href="/feed.xml" title="RSS">
+      				  <i class="fa fa-rss fa-2x"></i>
+      			</a>
+    		  </li>
+      
+        </ul>
+        <p class="copyright text-muted">
+		  Dominique Orban
+		  &nbsp;&bull;&nbsp;
+		  2016
+
+		  
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme strongly inspired by
+		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+
+
+
+  
+	<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+	<script src="//cdn.jsdelivr.net/clipboard.js/1.5.8/clipboard.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/tooltips.js"></script>
+    
+  
+
+
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+      e.clearSelection();
+      // console.info('Action:', e.action);
+      // console.info('Text:', e.text);
+      // console.info('Trigger:', e.trigger);
+      showTooltip(e.trigger, 'Copied!');
+    });
+
+    clipboard.on('error', function(e) {
+      // console.error('Action:', e.action);
+      // console.error('Trigger:', e.trigger);
+      showTooltip(e.trigger, fallbackMessage(e.action));
+    });
+  })();
+</script>
+
+
+
+
+  </body>
+</html>
