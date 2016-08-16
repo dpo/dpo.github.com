@@ -24,6 +24,7 @@ description: Computational Mathematician
 # List of links in the navigation bar
 navbar-links:
   Research: "aboutme"
+  Appointments: "appointments"
   Publications: "publications"
   Teaching: "teaching"
   Software: "software"
