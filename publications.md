@@ -5,6 +5,7 @@ title: Publications
 
 # 2016
 
+{% bibliography --file articles2016 %}
 {% bibliography --file techrep2016 %}
 
 # 2015
