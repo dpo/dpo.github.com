@@ -3,6 +3,10 @@ layout: page
 title: Publications
 ---
 
+# 2017
+
+{% bibliography --file techrep2017 %}
+
 # 2016
 
 {% bibliography --file articles2016 %}
