@@ -11,7 +11,7 @@ Though still young, the environment provides access to the [CUTEst](http://ccpfo
 Important features include lazy linear operators, a collection of Krylov methods, a problem collection, and interfaces to high-performance linear algebra kernels.
 Several building blocks for optimization are available and complete solvers are in the making.
 
-<a href="https://github.com/JuliaOptimizers">
+<a href="https://github.com/JuliaSmoothOptimizers">
   <i class="fa fa-github fa-2x" alt="Github" title="Github" aria-hidden="true" style="color:#404040">
   </i>
 </a>
