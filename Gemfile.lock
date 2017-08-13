@@ -37,7 +37,7 @@ GEM
     kramdown (1.10.0)
     latex-decode (0.2.2)
       unicode (~> 0.4)
-    libv8 (3.16.14.13)
+    libv8 (3.16.14.19)
     liquid (3.0.6)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
@@ -64,3 +64,6 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-scholar
   therubyracer
+
+BUNDLED WITH
+   1.15.3
