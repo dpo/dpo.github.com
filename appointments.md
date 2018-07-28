@@ -16,5 +16,6 @@ title: Appointments
 * Associate Editor, [ACM Transaction on Mathematical Software](http://toms.acm.org)
 * Associate Editor, [Optimization Methods and
   Software](http://www.tandfonline.com/loi/goms)
+* Associate Editor, [Computational Optimization and Applications](https://link.springer.com/journal/10589)
 * Associate Editor, [Operations Research Letters](http://www.journals.elsevier.com/operations-research-letters)
 * Technical Editor, [Mathematical Programming Computation](https://www.springer.com/mathematics/journal/12532)
