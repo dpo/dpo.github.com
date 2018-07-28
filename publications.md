@@ -5,6 +5,8 @@ title: Publications
 
 # 2018
 
+{% bibliography --file articles2018 --file reviews2018 %}
+{% bibliography --file proceedings2018 %}
 {% bibliography --file techrep2018 %}
 
 # 2017
@@ -22,7 +24,7 @@ title: Publications
 
 {% bibliography --file articles2015 %}
 {% bibliography --file proceedings2015 %}
-{% bibliography --file techrep2015 %}
+{% bibliography --file techrep2015 --file unpublished2015 %}
 
 # 2014
 
