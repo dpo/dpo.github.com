@@ -28,7 +28,7 @@ module Jekyll
     class DOI < BibTeX::Filter
       def apply(value)
         value.to_s.gsub(DOI_PATTERN) {
-          "<a href='http://dx.doi.org/#{$&}'>#{$&}</a>"
+          "<a href='https://dx.doi.org/#{$&}'>#{$&}</a>"
         }
       end
     end
