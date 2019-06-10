@@ -45,7 +45,7 @@ The package contains a collection of test problems, along with Fortran 77, Fortr
 It is usually associated to SIFDecode, a decoder for problems modeled in the [SIF](http://www.numerical.rl.ac.uk/lancelot/sif/sifhtml.html)—a generalization of the [MPS](https://en.wikipedia.org/wiki/MPS_(format)) modeling language for linear programs.
 CUTEst realizes the interface between such problems and a variety of popular solvers.
 
-<a href="http://ccpforge.cse.rl.ac.uk/gf/project/cutest/wiki">
+<a href="https://github.com/ralna/CUTEst">
   <i class="fa fa-home fa-2x" alt="Home" title="Home" aria-hidden="true" style="color:#404040">
   </i>
 </a>
@@ -60,7 +60,7 @@ A thread-safe library of Fortran 90 packages for nonlinear optimization problems
 Areas currently covered by the library include unconstrained and bound-constrained optimization, quadratic programming, nonlinear programming, systems of nonlinear equations and inequalities, and nonlinear least squares problems.
 The library also contains a quadratic program preprocessor and a Lanczos-based method for trust-region subproblems.
 
-<a href="http://www.galahad.rl.ac.uk">
+<a href="https://github.com/ralna/GALAHAD">
   <i class="fa fa-home fa-2x" alt="Home" title="Home" aria-hidden="true" style="color:#404040">
   </i>
 </a>
