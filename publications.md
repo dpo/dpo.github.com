@@ -50,7 +50,6 @@ title: Publications
 # 2011
 
 {% bibliography --file articles2011 %}
-{% bibliography --file techrep2011 %}
 {% bibliography --file unpublished2011 %}
 
 # 2010
