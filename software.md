@@ -6,7 +6,7 @@ title: Software
 # A Julia Ecosystem for Optimization
 
 A modeling and solution environment for continuous optimization in the high-level and high-performance [Julia](http://julialang.org) language.
-Though still young, the environment provides access to the [CUTEst](http://ccpforge.cse.rl.ac.uk/gf/project/cutest/wiki) and [AMPL](http://www.ampl.com) modeling environments and can be used alongside [JuMP](https://github.com/JuliaOpt/JuMP.jl).
+Though still young, the environment provides access to the [CUTEst](https://github.com/ralna/CUTEst) and [AMPL](http://www.ampl.com) modeling environments and can be used alongside [JuMP](https://github.com/JuliaOpt/JuMP.jl).
 
 Important features include lazy linear operators, a collection of Krylov methods, a problem collection, and interfaces to high-performance linear algebra kernels.
 Several building blocks for optimization are available and complete solvers are in the making.
