@@ -6,6 +6,7 @@ title: Publications
 # 2020
 
 {% bibliography --file articles2020 %}
+{% bibliography --file techrep2020 %}
 
 # 2019
 
