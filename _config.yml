@@ -151,7 +151,7 @@ prose:
           help: "Check to publish post, uncheck to hide."
 
 scholar:
-  style: apa
+  style: apa-old-doi-prefix
   locale: en
 
   sort_by: year
@@ -168,7 +168,6 @@ scholar:
   replace_strings: true
   join_strings:    true
 
-  use_raw_bibtex_entry: false
   bibtex_filters:
   # - superscript
   - latexmarkup  # defined in _plugins/ext.rb
