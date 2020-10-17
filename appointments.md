@@ -5,8 +5,8 @@ title: Appointments
 
 # Current Position
 
-* Associate Professor of applied mathematics in the [mathematics and industrial
-  engineering department](http://www.polymtl.ca/magi) of [Ecole Polytechnique](http://www.polymtl.ca), Montreal, Canada
+* Full Professor of applied mathematics in the [mathematics and industrial
+  engineering department](http://www.polymtl.ca/magi) of [Polytechnique Montreal](http://www.polymtl.ca), Montreal, Canada
 * Faculty Member of the [GERAD](https://www.gerad.ca/en) research center
 
 # Other Appointments
