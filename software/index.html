@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Software</title>
+
+  
+  <meta name="author" content="Dominique Orban">
+  
+
+  <meta name="description" content="# A Julia Ecosystem for Optimization A modeling and solution environment for continuous optimization in the high-level and high-performance [Julia](http://julialang.org) language. The environment provides access to the [CUTEst](https://github.com/ralna/CUTEst) and [AMPL](http://www.ampl.com) modeling environments and can be used alongside [JuMP](https://github.com/JuliaOpt/JuMP.jl). Important features include lazy linear operators, a collection of Krylov methods, a...">
+
+  
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+
+  
+<!-- Google Analytics -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-17046019-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      TeX: {
+        TagSide: "right",
+        Macros: {
+          R: '\\mathbb{R}'
+        }
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script>
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+      <link rel="stylesheet" href="/assets/css/academicons.css">
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  <meta property="og:title" content="Software">
+  <meta property="og:description" content="# A Julia Ecosystem for Optimization A modeling and solution environment for continuous optimization in the high-level and high-performance [Julia](http://julialang.org) language. The environment provides access to the [CUTEst](https://github.com/ralna/CUTEst) and [AMPL](http://www.ampl.com) modeling environments and can be used alongside [JuMP](https://github.com/JuliaOpt/JuMP.jl). Important features include lazy linear operators, a collection of Krylov methods, a...">
+
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/software/">
+  <link rel="canonical" href="http://localhost:4000/software/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Software">
+  <meta property="twitter:description" content="# A Julia Ecosystem for Optimization A modeling and solution environment for continuous optimization in the high-level and high-performance [Julia](http://julialang.org) language. The environment provides access to the [CUTEst](https://github.com/ralna/CUTEst) and [AMPL](http://www.ampl.com) modeling environments and can be used alongside [JuMP](https://github.com/JuliaOpt/JuMP.jl). Important features include lazy linear operators, a collection of Krylov methods, a...">
+
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutme">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/appointments">Appointments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/teaching">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/software">Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/datasets">Datasets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.gerad.ca/en/people/dominique-orban">GERAD</a>
+          </li></ul>
+  </div>
+
+  
+
+  
+
+</nav>
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Software</h1>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <h1 id="a-julia-ecosystem-for-optimization">A Julia Ecosystem for Optimization</h1>
+
+<p>A modeling and solution environment for continuous optimization in the high-level and high-performance <a href="http://julialang.org">Julia</a> language.
+The environment provides access to the <a href="https://github.com/ralna/CUTEst">CUTEst</a> and <a href="http://www.ampl.com">AMPL</a> modeling environments and can be used alongside <a href="https://github.com/JuliaOpt/JuMP.jl">JuMP</a>.</p>
+
+<p>Important features include lazy linear operators, a collection of Krylov methods, a problem collection, and interfaces to high-performance linear algebra kernels.
+Several building blocks for optimization are available and complete solvers are in the making.</p>
+
+<p><a href="https://github.com/JuliaSmoothOptimizers">
+  <i class="fa fa-github fa-2x" alt="Github" title="Github" aria-hidden="true" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="a-python-ecosystem-for-optimization">A Python Ecosystem for Optimization</h1>
+
+<p>A complete modeling and solution environment for continuous optimization in the high-level <a href="http://www.python.org">Python</a> language with computationally-intensive parts written in <a href="http://www.cython.org">Cython</a>.
+Distributed across several modular packages, the environment features modeling facilities, including automatic differentiation, limited-memory quasi-Newton approximations, discretized PDE-constrained problems via <a href="http://fenicsproject.org">FEniCS</a>, building blocks for writing optimization solvers, efficient linear algebra functionalities, and several complete solvers.</p>
+
+<p><a href="https://github.com/PythonOptimizers">
+  <i class="fa fa-github fa-2x" alt="Github" title="Github" aria-hidden="true" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="lldl-limited-memory-ldl-factorization">LLDL: Limited-Memory LDL Factorization</h1>
+
+<p>LLDL implements a limited-memory scheme for symmetric matrices that possess a \(LDL^T\) factorization, i.e., with \(D\) diagonal. Symmetric quasi-definite matrices fall into this category.
+LLDL is applicable to symmetric indefinite matrices that are not quasi definite, or more generally do not admit a \(LDL^T\) factorization.
+In this case, it computes an incomplete factorization of a nearby matrix.
+LLDL is chiefly used to produce preconditioners for solving symmetric indefinite systems using an iterative method such as <a href="http://web.stanford.edu/group/SOL/software/minres">MINRES</a>.</p>
+
+<p><a href="https://github.com/optimizers/lldl">
+  <i class="fa fa-github fa-2x" alt="Github" title="Github" aria-hidden="true" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="cuter--cutest">CUTEr / CUTEst</h1>
+
+<p>A versatile testing environment for optimization and linear algebra solvers.
+The package contains a collection of test problems, along with Fortran 77, Fortran 90/95, C/C++ and Matlab tools intended to help developers design, compare and improve new and existing solvers.
+It is usually associated to SIFDecode, a decoder for problems modeled in the <a href="http://www.numerical.rl.ac.uk/lancelot/sif/sifhtml.html">SIF</a>—a generalization of the <a href="https://en.wikipedia.org/wiki/MPS_(format)">MPS</a> modeling language for linear programs.
+CUTEst realizes the interface between such problems and a variety of popular solvers.</p>
+
+<p><a href="https://github.com/ralna/CUTEst">
+  <i class="fa fa-home fa-2x" alt="Home" title="Home" aria-hidden="true" style="color:#404040">
+  </i>
+</a>
+<a href="https://en.wikipedia.org/wiki/CUTEr" style="text-decoration:none">
+  <i class="fa fa-wikipedia-w fa-2x" alt="Wikipedia" title="Wikipedia" style="color:#404040">
+  </i>
+</a></p>
+
+<h1 id="galahad">GALAHAD</h1>
+
+<p>A thread-safe library of Fortran 90 packages for nonlinear optimization problems.
+Areas currently covered by the library include unconstrained and bound-constrained optimization, quadratic programming, nonlinear programming, systems of nonlinear equations and inequalities, and nonlinear least squares problems.
+The library also contains a quadratic program preprocessor and a Lanczos-based method for trust-region subproblems.</p>
+
+<p><a href="https://github.com/ralna/GALAHAD">
+  <i class="fa fa-home fa-2x" alt="Home" title="Home" aria-hidden="true" style="color:#404040">
+  </i>
+</a>
+<a href="https://en.wikipedia.org/wiki/Galahad_library" style="text-decoration:none">
+  <i class="fa fa-wikipedia-w fa-2x" alt="Wikipedia" title="Wikipedia" style="color:#404040">
+  </i>
+</a></p>
+
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="mailto:dominique.orban@gmail.com" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/JuliaSmoothOptimizers" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://stackoverflow.com/users/505285/dominique" title="StackOverflow">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">StackOverflow</span>
+   </a>
+  </li><li class="list-inline-item">
+   <a href="https://orcid.org/0000-0002-8017-7687" title="ORCID">
+     <span class="fa-stack fa-lg" aria-hidden="true">
+       <i class="fas fa-circle fa-stack-2x"></i>
+       <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
+     </span>
+     <span class="sr-only">ORCID</span>
+   </a>
+ </li><li class="list-inline-item">
+    <a href="https://scholar.google.com/citations?user=OCFgRysAAAAJ" title="Google Scholar">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Google Scholar</span>
+    </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Dominique Orban
+        &nbsp;&bull;&nbsp;
+      
+      2021
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="http://localhost:4000/">dpo.github.io</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+    
+  <script src="//cdn.jsdelivr.net/clipboard.js/1.5.8/clipboard.min.js"></script>
+
+
+  
+    
+  <script src="https://kit.fontawesome.com/75926419d4.js"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/tooltips.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+      e.clearSelection();
+      // console.info('Action:', e.action);
+      // console.info('Text:', e.text);
+      // console.info('Trigger:', e.trigger);
+      showTooltip(e.trigger, 'Copied!');
+    });
+
+    clipboard.on('error', function(e) {
+      // console.error('Action:', e.action);
+      // console.error('Trigger:', e.trigger);
+      showTooltip(e.trigger, fallbackMessage(e.action));
+    });
+  })();
+</script>
+
+
+</body>
+</html>
